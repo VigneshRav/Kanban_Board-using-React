@@ -4,13 +4,11 @@ A Kanban-style task management application built with React that allows users to
 
 ---
 
-## 🚀 Features:
-
-## 🔧 Core Functionality:-
+## 🚀 Features:-
 
 **📋 Three Task Columns**
 
- - To Do, In Progress, and Done
+- To Do, In Progress, and Done
 
 **🎯 Add/Edit/Delete Tasks**
 
@@ -41,14 +39,16 @@ A Kanban-style task management application built with React that allows users to
 ---
 
 ## 🛠️ Tech Stack:-
-
-|**Tech**                       |**Description**                                                         |    ------------------------------- | -----------------------------------------------------------------------|
-| **React JS**                  | Frontend framework                                                     |
-| **TailwindCSS**               | Utility-first CSS styling                                              |
-| **React Hooks**               | State and lifecycle management (`useState`, `useEffect`, `useContext`) |
-| **Context API**               | Global state management for tasks                                      |
-| **react-beautiful-dnd**       | Drag-and-drop support                                                  |
-| **localStorage**              | Local persistence of task data                                         |
+|-------------------------|------------------------------------------------------------------------|
+|       **Tech**          |                     **Description**                                    | 
+|-------------------------|------------------------------------------------------------------------|
+| **React JS**            | Frontend framework                                                     |
+| **TailwindCSS**         | Utility-first CSS styling                                              |
+| **React Hooks**         | State and lifecycle management (`useState`, `useEffect`, `useContext`) |
+| **Context API**         | Global state management for tasks                                      |
+| **react-beautiful-dnd** | Drag-and-drop support                                                  |
+| **localStorage**        | Local persistence of task data                                         |
+|-------------------------|------------------------------------------------------------------------|
 
 ---
 
@@ -90,11 +90,11 @@ A Kanban-style task management application built with React that allows users to
 
 - TaskContext provides:
 
-    - Task list
+  - Task list
 
-    - Create, edit, delete, and move task functions.
+  - Create, edit, delete, and move task functions.
 
-    - Local updates are mirrored in the UI and stored locally.
+  - Local updates are mirrored in the UI and stored locally.
 
 ## 🎨 Styling:-
 
