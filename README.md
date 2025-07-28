@@ -39,7 +39,7 @@ A Kanban-style task management application built with React that allows users to
 ---
 
 ## 🛠️ Tech Stack:-
-|-------------------------|------------------------------------------------------------------------|
+
 |       **Tech**          |                     **Description**                                    | 
 |-------------------------|------------------------------------------------------------------------|
 | **React JS**            | Frontend framework                                                     |
@@ -48,7 +48,7 @@ A Kanban-style task management application built with React that allows users to
 | **Context API**         | Global state management for tasks                                      |
 | **react-beautiful-dnd** | Drag-and-drop support                                                  |
 | **localStorage**        | Local persistence of task data                                         |
-|-------------------------|------------------------------------------------------------------------|
+
 
 ---
 
