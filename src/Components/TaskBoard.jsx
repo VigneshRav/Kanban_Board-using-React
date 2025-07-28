@@ -1,10 +1,10 @@
-import React, { useContext } from 'react';
-import { TaskContext } from '../Context/TaskContext';
-import TaskColumn from './TaskColumn';
-import TaskForm from './TaskForm';
-import { DragDropContext } from 'react-beautiful-dnd';
+import React, { useContext } from "react";
+import { TaskContext } from "../Context/TaskContext";
+import TaskColumn from "./TaskColumn";
+import TaskForm from "./TaskForm";
+import { DragDropContext } from "react-beautiful-dnd";
 
-const statuses = ['To Do', 'In Progress', 'Done'];
+const statuses = ["To Do", "In Progress", "Done"];
 
 export default function TaskBoard() {
   const { tasks, moveTask } = useContext(TaskContext);
@@ -25,11 +25,11 @@ export default function TaskBoard() {
       <TaskForm />
       <DragDropContext onDragEnd={onDragEnd}>
         <div className="flex flex-col md:flex-row gap-4 mt-4">
-          {statuses.map(status => (
+          {statuses.map((status) => (
             <TaskColumn
               key={status}
               status={status}
-              tasks={tasks.filter(t => t.status === status)}
+              tasks={tasks.filter((t) => t.status === status)}
             />
           ))}
         </div>

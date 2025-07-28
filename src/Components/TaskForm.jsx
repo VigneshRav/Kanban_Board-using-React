@@ -27,7 +27,7 @@ export default function TaskForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="border-2 border-cyan-400 px-4 py-2 rounded shadow space-y-4"
+      className="border-2 border-cyan-800 px-4 py-2 rounded shadow space-y-4"
     >
       {/* Title */}
       <div className="flex items-center gap-4">
@@ -43,7 +43,7 @@ export default function TaskForm() {
           name="title"
           required
           placeholder="Task title"
-          className="border-2 border-amber-800 flex-1 p-1 rounded"
+          className="border-2 border-cyan-400 flex-1 p-1 rounded"
           value={form.title}
           onChange={(e) => setForm({ ...form, title: e.target.value })}
         />
@@ -62,7 +62,7 @@ export default function TaskForm() {
           id="description"
           name="description"
           placeholder="Description (optional)"
-          className="border-2 border-amber-800 flex-1 p-1 rounded"
+          className="border-2 border-cyan-400 flex-1 p-1 rounded"
           value={form.description}
           onChange={(e) => setForm({ ...form, description: e.target.value })}
         />
@@ -79,13 +79,13 @@ export default function TaskForm() {
         <select
           id="priority"
           name="priority"
-          className="border-2 border-amber-800 flex-1 py-1 cursor-pointer rounded"
+          className="border-2 border-cyan-400 flex-1 py-1 cursor-pointer rounded"
           value={form.priority}
           onChange={(e) => setForm({ ...form, priority: e.target.value })}
         >
-          <option>Low 💤</option>
-          <option>Medium ⚡</option>
           <option>High 🔥</option>
+          <option>Medium ⚡</option>
+          <option>Low 💤</option>
         </select>
       </div>
 
@@ -100,7 +100,7 @@ export default function TaskForm() {
         <select
           id="status"
           name="status"
-          className="border-2 border-amber-800 flex-1 py-1 cursor-pointer rounded"
+          className="border-2 border-cyan-400 flex-1 py-1 cursor-pointer rounded"
           value={form.status}
           onChange={(e) => setForm({ ...form, status: e.target.value })}
         >

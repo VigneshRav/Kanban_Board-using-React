@@ -1,11 +1,13 @@
-import React from 'react';
-import { Droppable } from 'react-beautiful-dnd';
-import TaskCard from './TaskCard';
+import React from "react";
+import { Droppable } from "react-beautiful-dnd";
+import TaskCard from "./TaskCard";
 
 export default function TaskColumn({ status, tasks }) {
   return (
-    <div className="border-2 border-cyan-400 flex-1 p-2 rounded shadow">
-      <h2 className="underline text-xl font-serif text-orange-600 font-bold mb-2">{status}</h2>
+    <div className="border-2 border-cyan-800 flex-1 p-2 rounded shadow">
+      <h2 className="underline text-xl font-serif text-pink-600 font-bold mb-2">
+        {status}
+      </h2>
       <Droppable droppableId={status}>
         {(provided) => (
           <div
